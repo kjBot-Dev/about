@@ -6,7 +6,7 @@ use kjBot\Framework\Message;
 use kjBot\Framework\Event\MessageEvent;
 use kjBot\Framework\DataStorage;
 
-class Listen extends Module{
+class About extends Module{
     public function process(array $args, MessageEvent $event): Message{
         return $event->sendBack(DataStorage::GetData('about.txt'));
     }
